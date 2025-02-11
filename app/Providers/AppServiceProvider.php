@@ -33,6 +33,7 @@ class AppServiceProvider extends ServiceProvider
                 'connection' => $connection->getName(),
                 'database' => $connection->getDatabaseName(),
                 'url' => request()->url(),
+                'request_method' => request()->method(),
                 // 'user_id' => auth()->id,
                 'timestamp' => now()->toDateTimeString(),
                 // 'query_log' => $connection->getQueryLog()
